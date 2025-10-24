@@ -1,7 +1,7 @@
 @import "./../../../../variables.scss";
 
 .main-navbar {
-  height: 70px;
+   height: 50px !important;
   background: white;
   font-family: $CodeFont;
   position: relative;
@@ -17,7 +17,7 @@
   }
 
   .nav-link {
-    padding: 5px 0;
+    padding: 2px 0;
     color: inherit;
     margin: 0;
     font-size: 13px;
@@ -42,7 +42,7 @@
     }
 
     .hamburger-menu {
-      position: relative; transform: translateY(25px);
+      position: relative; transform: translateY(15px);
 
       &:before { content: ""; position: absolute; left: 0; bottom: 8px; background: $Green; }
       &:after { content: ""; position: absolute; left: 0; top: 8px; background: $Green; }
