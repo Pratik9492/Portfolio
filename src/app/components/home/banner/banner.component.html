@@ -1,0 +1,32 @@
+<section class="section banner">
+  <div [@bannerTrigger] class="container">
+    <div class="section-box-banner">
+      <div class="content">
+        <div>
+          <h1>Hello! My name is</h1>
+        </div>
+        <div class='banner-title'>
+          <h2>Pratik Nemade</h2>
+          <h3>Full Stack Developer</h3>
+        </div>
+        <div class='banner-description'>
+          <p [innerHTML]='"Banner.Description" | translate' class="mt-4"></p>
+        </div>
+      </div>
+      <div class="div-btn-banner">
+        <!-- Resume button (always visible) -->
+        <a (click)="downloadCV(); analyticsService.sendAnalyticEvent('click_resume', 'banner', 'download')"
+           class="main-btn resume-btn">
+          {{"Banner.ActionBtn" | translate}}
+        </a>
+
+        <!-- LinkedIn button (mobile only) -->
+        <a href="https://www.linkedin.com/in/pratik-nemade/" target="_blank"
+           (click)="analyticsService.sendAnalyticEvent('click_linkedin', 'banner', 'visit')"
+           class="main-btn linkedin-btn d-inline-block d-md-none" style="margin-left: 10px;">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,163 @@
+@import "./../../../../variables.scss";
+
+.main-navbar {
+  height: 70px;
+  background: white;
+  font-family: $CodeFont;
+  position: relative;
+  z-index: 100;
+
+  /* Desktop Menu */
+  .menu-ul {
+    li {
+      margin: 0 13px;
+    }
+    li:first-child { margin-left: 0; }
+    li:last-child { margin-right: 0; }
+  }
+
+  .nav-link {
+    padding: 5px 0;
+    color: inherit;
+    margin: 0;
+    font-size: 13px;
+    &:hover { color: #4C6EF5; }
+  }
+
+  .nav-number { color: #4C6EF5; font-size: 12px; }
+  .nav-text { color: #6E6E6E !important; padding-bottom: 4px; }
+
+  .menu-wrapper {
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 36px; height: 60px;
+    cursor: pointer; z-index: 11;
+
+    .hamburger-menu,
+    .hamburger-menu:before,
+    .hamburger-menu:after {
+      width: 36px;
+      height: 1.5px;
+      background: #4C6EF5;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger-menu {
+      position: relative; transform: translateY(25px);
+
+      &:before { content: ""; position: absolute; left: 0; bottom: 8px; background: $Green; }
+      &:after { content: ""; position: absolute; left: 0; top: 8px; background: $Green; }
+
+      &.animate {
+        background: rgba(255, 255, 255, 0);
+        &:after { top: 0; transform: rotate(45deg); }
+        &:before { bottom: 0; transform: rotate(-45deg); }
+      }
+    }
+  }
+}
+
+/* Fixed Navbar Shadow & Top Behavior */
+.on-top { position: fixed; top: 0; width: 100%; z-index: 9; height: 100px; transition: all 0.25s ease; }
+.nav-shadow { box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7); transition: all 0.25s ease; }
+
+/* MOBILE MENU */
+.menu-responsive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.2); /* optional dim overlay */
+}
+
+.menu-responsive[style*="visible"] {
+  pointer-events: auto;
+}
+
+/* Slide-in aside menu */
+aside {
+  position: absolute;
+  top: 0;
+  right: -75vw; /* hidden initially */
+  width: 75vw;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 25px;
+  box-shadow: -10px 0 30px -15px rgba(2,12,27,0.7);
+  transition: right 0.3s ease-in-out;
+  z-index: 1001;
+
+  &.aside-show { right: 0; }
+
+  nav {
+    width: 100%;
+    text-align: center;
+
+    ol {
+      padding: 50px 0 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        margin-bottom: 20px;
+        font-size: 16px;
+
+        a {
+          display: block;
+          width: 100%;
+          padding: 10px 20px;
+          text-decoration: none;
+          color: $LightestSlate;
+          transition: color 0.3s ease;
+        }
+      }
+    }
+  }
+}
+
+/* Close button fixed on viewport */
+/* Close button INSIDE aside */
+.close-menu-btn {
+  position: absolute; /* changed from fixed */
+  top: 15px;
+  left: 120px; /* slightly inside aside */
+  font-size: 32px;
+  background: transparent;
+  border: none;
+  color: #4C6EF5;
+  z-index: 1100;
+  cursor: pointer;
+  line-height: 1;
+
+  &:hover { color: #172a45; }
+}
+
+
+@media (min-width: 769px) {
+  .close-menu-btn { display: none; }
+}
+
+/* Hide hamburger & mobile menu on desktop */
+@media (min-width: 827px) {
+  .menu-wrapper,
+  .menu-responsive { display: none; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+  .main-navbar .nav-link {
+    margin: 0;
+    padding: 0.5rem 0.7rem;
+  }
+}
+
+@media (max-width: 827px) {
+  nav .nav { display: none; }
+}

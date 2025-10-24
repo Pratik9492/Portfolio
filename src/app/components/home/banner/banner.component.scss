@@ -1,0 +1,97 @@
+@import "./../../../../variables.scss";
+
+.banner {
+    min-height: 100vh;
+
+    .container {
+        display: table;
+        height: 100vh;
+
+        .section-box-banner {
+            display: table-cell;
+            vertical-align: middle;
+
+            .content {
+                margin-top: 98px;
+            }
+
+            h1 {
+                color: black;
+                margin: 0 0 20px 3px;
+                font-size: 25px;
+                font-weight: normal;
+                
+            }
+
+            h2, h3 {
+                font-weight: 600;
+                font-size: 80px;
+                line-height: 1.1;
+                margin: 0;
+                 
+                background: black;
+                color: #fff;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            h2 {
+                color: $LightestSlate;
+            }
+
+            h3 {
+                color: black;
+            }
+
+            .banner-description {
+                margin-bottom: 70px;
+                max-width: 800px;
+                width: 100%;
+                text-align: justify;
+                text-justify: inter-word;
+
+                p {
+                     
+                  
+
+                    @media (max-width: 768px) {
+                        text-align: left;
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+
+            .div-btn-banner {
+                height: 43px;
+            }
+        }
+    }
+}
+.div-btn-banner {
+    height: 43px;
+
+    .main-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 2px solid #000; // keep default border
+        color: #000; // default text color
+        background-color: transparent; // default background
+        transition: all 0.3s ease; // smooth hover effect
+
+        &:hover {
+            color: #fff; // text color on hover
+        }
+
+        &.resume-btn:hover {
+            background-color: #28a745; // green for Resume
+            border-color: #28a745;
+        }
+
+        &.linkedin-btn:hover {
+            background-color: #0077B5; // LinkedIn blue
+            border-color: #0077B5;
+        }
+    }
+}

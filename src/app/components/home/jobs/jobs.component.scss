@@ -1,0 +1,125 @@
+@import "./../../../../variables.scss";
+
+::ng-deep .jobs .jobs-tabs {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px; // 👈 adds nice spacing between the tab list and the content
+
+  .tab-content {
+    margin-left: 0; // remove the old offset since we're using gap now
+  }
+
+  ul {
+    display: block;
+    width: 150px; // 👈 increased width to fit longer company names
+    border: none;
+    flex-shrink: 0; // prevents it from shrinking when company name is long
+  }
+
+  a.active {
+    background-color: black !important;
+    color: white !important;
+    border-color: transparent !important;
+    border-radius: 0px;
+    white-space: normal; // 👈 allows long names to wrap inside
+    word-break: break-word; // 👈 breaks long words if needed
+  }
+
+  a:hover {
+    background-color: black !important;
+    color: white !important;
+    border-color: transparent !important;
+    border-radius: 0px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    height: auto; // 👈 allows auto height for wrapped text
+    padding: 8px 20px;
+    font-family: $CodeFont;
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    white-space: normal; // 👈 allow text wrap
+    word-break: break-word;
+  }
+
+  li {
+    border-left: 2px solid $LightestNavy;
+  }
+}
+
+.jobs {
+  max-width: 700px;
+  margin: auto;
+
+  .title-tab-content {
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+    .company-tab-content {
+      color: #4C6EF5;
+    }
+  }
+
+  /* 👇 New Style for "What We Do Here" */
+  .company-summary {
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  .job-time {
+    font-family: $CodeFont;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    color: #4F4F4F;
+    margin-bottom: 30px;
+  }
+
+  .job-description {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+    &:before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: #4C6EF5;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .jobs {
+    .job-description {
+      padding: 0px;
+    }
+  }
+
+  ::ng-deep .jobs-tabs {
+    display: block !important;
+
+    .tab-content {
+      margin-left: 0px !important;
+    }
+
+    ul {
+      display: block;
+      width: 100% !important;
+      margin-bottom: 50px;
+    }
+  }
+}

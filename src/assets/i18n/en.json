@@ -1,0 +1,98 @@
+{
+  "Header.Item1": "About me",
+  "Header.Item2": "Experience",
+  "Header.Item3": "Projects",
+  "Header.Item4": "Contact",
+  "Header.cvBtn": "Resume",
+  "Header.cvName": "Pratik_Nemade_Resume.pdf",
+  "Banner.Pretitle": "Hello! My name is",
+  "Banner.Description": "I’m a Full Stack Developer with hands-on experience in <span class='underline'>ASP.NET Core, Angular, Flutter, and MySQL</span>, focused on creating scalable, responsive, and user-friendly applications. I specialize in building clean, maintainable architectures that ensure reliability and performance from front end to back end. Skilled in <span class='underline'>RESTful API development, database optimization, and agile workflows</span>, I thrive in collaborative environments where innovation, precision, and problem-solving drive results.",
+  "Banner.ActionBtn": "Resume",
+  "AboutMe.Title": "About me",
+  "AboutMe.Paragraphs": [
+    "I’m a <span class='underline'>Full Stack Software Developer</span> with hands-on experience building scalable, responsive, and cross-platform applications using <span class='underline'>Angular, Flutter, HTML, CSS, JavaScript, .NET Core, Java, and MySQL</span>. I excel at transforming complex requirements into clean, maintainable architectures that deliver high performance and seamless user experiences.",
+    "Beyond coding, I focus on <span class='underline'>optimizing systems, standardizing development patterns, and proposing innovative solutions</span> that add real value to projects. I thrive in collaborative, fast-paced environments where creativity, precision, and problem-solving drive results.",
+    "Some of the technologies that I have trained and worked on include (but are not limited to):"
+  ],
+  "Experience.Title": "Experience",
+  "Experience.Jobs": [
+    {
+      "Tab": "TrueMirror Technologies",
+      "Title": "Software Developer",
+      "Date": "May 2024 - Present",
+      "Description": [
+        "Develop and maintain scalable full-stack web applications using Angular (frontend) and .NET Core with MySQL (backend), ensuring high performance, security, and responsive design across all devices.",
+        "Design and implement RESTful APIs, integrating them seamlessly with Angular components to enable dynamic, data-driven functionality and enhance overall user experience.",
+        "Elevate UI/UX quality by creating reusable, modular Angular components and ensuring cross-browser compatibility and consistent responsive behavior.",
+        "Collaborate in agile teams, actively participating in sprint planning, code reviews, and daily standups to deliver high-quality features within deadlines and continuously improve development practices.",
+        "Optimize backend performance by crafting efficient MySQL queries, stored procedures, and indexes, and by diagnosing and resolving complex issues across the full application stack."
+      ]
+    },
+    {
+      "Tab": "Cogent E-Serivces",
+      "Title": "Customer Support Associate",
+      "Date": "November 2023 - April 2024",
+      "Description": [
+        "Served as a Customer Support Associate for Bajaj Finserv, managing customer interactions and guiding them through the complete loan application process.",
+        "Processed end-to-end personal loan applications, ensuring accuracy in documentation, eligibility verification, and approval coordination.",
+        "Successfully contributed to loan disbursements worth ₹2 Crores, supporting business growth through quality service and customer satisfaction.",
+        "Maintained high standards of compliance and data integrity, while effectively resolving customer queries and ensuring smooth loan processing."
+      ]
+    },
+    {
+      "Tab": "SmartX Brains Solution",
+      "Title": "Frontend Developer Intern",
+      "Date": "October 2022 - March 2023",
+      "Description": [
+        "Designed and implemented responsive user interfaces, improving cross-device compatibility and user experience.",
+        "Creating platforms with Angular, Nodejs, ExpressJS, WordPress programmed with functional, reactive, and object-oriented programming paradigms.",
+        "Collaborated with senior developers to translate UI/UX designs into functional web pages, following best practices in clean and maintainable code.",
+        "Gained hands-on experience in debugging, browser compatibility, and performance optimization for frontend components."
+      ]
+    }
+  ],
+  "FeatureProjects.Title": "Projects that I was a part of",
+  "FeatureProjects.Label": "Featured Project",
+  "FeatureProjects.Projects": [
+    {
+      "Title": "Hardware Data Controlling System",
+      "Description": "A high-performance web application built from scratch to manage multiple hardware devices with real-time data tracking. It features robust APIs for seamless IoT communication, concurrent device support, dynamic status monitoring, and interactive data visualization.",
+      "imgs": [
+        "assets/images/school/image1.png",
+        "assets/images/school/image2.png"
+      ],
+      "Technologies": ["Angular", "PrimeNG", "ASP.NET Core", "MySQL"]
+    },
+    {
+      "Title": "Billing System",
+      "Description": "A comprehensive billing system designed to streamline invoicing and payment processes. It includes features such as customer management, invoice generation, payment tracking, and reporting, all built with a user-friendly interface and secure backend.",
+      "imgs": [
+        "assets/images/bbm/Billing1.png",
+        "assets/images/bbm/Billing2.png"
+      ],
+      "Technologies": ["Angular", "PrimeNG", "ASP.NET Core", "MySQL"]
+    },
+    {
+      "Title": "Feedback System",
+      "Description": "A sophisticated feedback management platform developed from the ground up, featuring secure user authentication, fully customizable feedback forms, and configurable evaluation parameters. The system provides real-time submission tracking, advanced analytics dashboards, and automated notifications, enabling organizations to efficiently collect, monitor, and analyze user feedback for data-driven decision making.",
+      "imgs": [
+        "assets/images/mazhr/feedback1.png",
+        "assets/images/mazhr/feedback2.png"
+      ],
+      "Technologies": ["Angular", "PrimeNG", "ASP.NET Core", "MySQL"]
+    }
+  ],
+  "OtherProjects.Title": "More personal projects",
+  "OtherProjects.Projects": [
+    {
+      "Title": "MovieLens",
+      "Description": "A dynamic movie app showcasing the latest releases with real-time updates. Users can explore cast, ratings, trailers, and synopses, with clear indicators for new films. The intuitive interface ensures seamless navigation for an engaging movie discovery experience.",
+      "ghLink": "https://github.com/Pratik9492/MovieLens",
+      "Technologies": ["Angular"]
+    }
+  ],
+  "Contact.Pretitle": "What’s Next",
+  "Contact.Title": "Get in touch!",
+  "Contact.Content": "I will be happy to receive your contact if you want to talk about new opportunities. Write me, and I will reply as soon as I see your message. Simple one-page design that features a profile letter with basic information about a person.",
+  "Contact.Btn": "👋 Say Hello"
+}
