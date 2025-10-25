@@ -6,13 +6,11 @@
   "Header.cvBtn": "Resume",
   "Header.cvName": "Pratik_Nemade_Resume.pdf",
   "Banner.Pretitle": "Hello! My name is",
-  "Banner.Description": "I’m a Full Stack Developer with hands-on experience in <span class='underline'>ASP.NET Core, Angular, Flutter, and MySQL</span>, focused on creating scalable, responsive, and user-friendly applications. I specialize in building clean, maintainable architectures that ensure reliability and performance from front end to back end. Skilled in <span class='underline'>RESTful API development, database optimization, and agile workflows</span>, I thrive in collaborative environments where innovation, precision, and problem-solving drive results.",
+  "Banner.Description": "I’m a Full Stack Developer with hands-on experience in <span class='underline'>ASP.NET Core, Angular, Flutter, and MySQL</span>, focused on creating scalable, responsive, and user-friendly applications. I specialize in building clean, maintainable architectures that ensure reliability and performance from front end to back end. Skilled in <span class='underline'>RESTful API development, database optimization, and agile workflows,</span> I thrive in collaborative environments where innovation, precision, and problem-solving drive results.",
   "Banner.ActionBtn": "Resume",
   "AboutMe.Title": "About me",
   "AboutMe.Paragraphs": [
-    "I’m a <span class='underline'>Full Stack Software Developer</span> with hands-on experience building scalable, responsive, and cross-platform applications using <span class='underline'>Angular, Flutter, HTML, CSS, JavaScript, .NET Core, Java, and MySQL</span>. I excel at transforming complex requirements into clean, maintainable architectures that deliver high performance and seamless user experiences.",
-    "Beyond coding, I focus on <span class='underline'>optimizing systems, standardizing development patterns, and proposing innovative solutions</span> that add real value to projects. I thrive in collaborative, fast-paced environments where creativity, precision, and problem-solving drive results.",
-    "Some of the technologies that I have trained and worked on include (but are not limited to):"
+    "I’m a Full Stack Software Developer with hands-on experience building scalable, responsive, and cross-platform applications using Angular, Flutter, HTML, CSS, JavaScript, .NET Core, Java, and MySQL. I excel at transforming complex requirements into clean, maintainable architectures that deliver high performance and seamless user experiences. Beyond coding, I focus on optimizing systems, standardizing development patterns, and proposing innovative solutions that add real value to projects. I thrive in collaborative, fast-paced environments where creativity, precision, and problem-solving drive results. Some of the technologies that I have trained and worked on include (but are not limited to):"
   ],
   "Experience.Title": "Experience",
   "Experience.Jobs": [

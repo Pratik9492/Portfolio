@@ -2,7 +2,7 @@
 
 .main-navbar {
    height: 50px !important;
-  background: white;
+  background: #0F1115;
   font-family: $CodeFont;
   position: relative;
   z-index: 100;
@@ -25,7 +25,7 @@
   }
 
   .nav-number { color: #4C6EF5; font-size: 12px; }
-  .nav-text { color: #6E6E6E !important; padding-bottom: 4px; }
+  .nav-text { color: #E0E0E0 !important; padding-bottom: 4px; }
 
   .menu-wrapper {
     top: 0; left: 0; right: 0; bottom: 0;
@@ -37,7 +37,7 @@
     .hamburger-menu:after {
       width: 36px;
       height: 1.5px;
-      background: #4C6EF5;
+      background: #E0E0E0;
       transition: all 0.3s ease-in-out;
     }
 
@@ -84,7 +84,7 @@ aside {
   right: -75vw; /* hidden initially */
   width: 75vw;
   height: 100%;
-  background: white;
+  background: #0F1115;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,7 +114,7 @@ aside {
           width: 100%;
           padding: 10px 20px;
           text-decoration: none;
-          color: $LightestSlate;
+          color: #E0E0E0;
           transition: color 0.3s ease;
         }
       }
@@ -131,7 +131,7 @@ aside {
   font-size: 32px;
   background: transparent;
   border: none;
-  color: #4C6EF5;
+  color: #E0E0E0;
   z-index: 1100;
   cursor: pointer;
   line-height: 1;

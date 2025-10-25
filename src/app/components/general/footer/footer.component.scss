@@ -27,7 +27,7 @@ footer {
 
     i {
       font-size: 19px;
-      color: black;
+      color: #E0E0E0;
     }
 
     li {
@@ -52,7 +52,7 @@ footer {
       writing-mode: vertical-rl;
       margin: 20px auto;
       padding: 10px;
-      color: black;
+      color: #E0E0E0;
       text-decoration: none;
     }
   }
@@ -62,7 +62,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: white;
+  background-color: #0F1115;
   border-top: 1px solid #ddd;
   text-align: center;
   padding: 10px 0;
@@ -72,7 +72,7 @@ footer {
   align-items: center;
 
   a {
-    color: black;
+    color: #E0E0E0;
     text-decoration: none;
 
     &:hover {

@@ -3,31 +3,31 @@
 ::ng-deep .jobs .jobs-tabs {
   display: flex;
   align-items: flex-start;
-  gap: 60px; // 👈 adds nice spacing between the tab list and the content
+  gap: 60px;
 
   .tab-content {
-    margin-left: 0; // remove the old offset since we're using gap now
+    margin-left: 0;
   }
 
   ul {
     display: block;
-    width: 150px; // 👈 increased width to fit longer company names
+    width: 150px;
     border: none;
-    flex-shrink: 0; // prevents it from shrinking when company name is long
+    flex-shrink: 0;
   }
 
   a.active {
-    background-color: black !important;
-    color: white !important;
+    background-color: #e0e0e0 !important;
+    color: #0f1115 !important;
     border-color: transparent !important;
     border-radius: 0px;
-    white-space: normal; // 👈 allows long names to wrap inside
-    word-break: break-word; // 👈 breaks long words if needed
+    white-space: normal;
+    word-break: break-word;
   }
 
   a:hover {
-    background-color: black !important;
-    color: white !important;
+    background-color: #e0e0e0 !important;
+    color: #0f1115 !important;
     border-color: transparent !important;
     border-radius: 0px;
   }
@@ -37,14 +37,15 @@
     align-items: center;
     width: 100%;
     background-color: transparent;
-    height: auto; // 👈 allows auto height for wrapped text
+    height: auto;
     padding: 8px 20px;
     font-family: $CodeFont;
     font-size: 13px;
-    color: black;
+    color: #e0e0e0;
     cursor: pointer;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    white-space: normal; // 👈 allow text wrap
+    white-space: normal;
+
     word-break: break-word;
   }
 
@@ -58,17 +59,16 @@
   margin: auto;
 
   .title-tab-content {
-    color: black;
+    color: #e0e0e0;
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 5px;
 
     .company-tab-content {
-      color: #4C6EF5;
+      color: #4c6ef5;
     }
   }
 
-  /* 👇 New Style for "What We Do Here" */
   .company-summary {
     font-size: 16px;
     color: #333;
@@ -83,29 +83,43 @@
     font-size: 13px;
     font-weight: normal;
     letter-spacing: 0.05em;
-    color: #4F4F4F;
+    color: #e0e0e0;
     margin-bottom: 30px;
   }
 
+  /* ✅ Fixed spacing + alignment for triangle bullets */
   .job-description {
     position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    font-size: 18px;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    font-size: 17px;
+    line-height: 1.6;
 
     &:before {
-      content: '▹';
+      content: "▹";
       position: absolute;
       left: 0;
-      color: #4C6EF5;
+      top: 3px;
+      font-size: 18px;
+      color: #4c6ef5;
+      opacity: 0.9;
+      transform: scale(1.1);
     }
   }
 }
 
+/* ---------- Responsive Fixes ---------- */
 @media (max-width: 768px) {
   .jobs {
     .job-description {
-      padding: 0px;
+      padding-left: 25px !important; // ✅ keep spacing on mobile too
+      font-size: 15px;
+      line-height: 1.5;
+
+      &:before {
+        top: 2px;
+        font-size: 16px;
+      }
     }
   }
 
