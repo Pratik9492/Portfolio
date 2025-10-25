@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1761386875111,
+  "timestamp": 1761387555856,
   "index": "https://Pratik9492.github.io/Portfolio/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://Pratik9492.github.io/Portfolio/favicon.ico",
         "https://Pratik9492.github.io/Portfolio/index.html",
-        "https://Pratik9492.github.io/Portfolio/main.75f30069d85db69c.js",
+        "https://Pratik9492.github.io/Portfolio/main.88284351b7674686.js",
         "https://Pratik9492.github.io/Portfolio/manifest.webmanifest",
         "https://Pratik9492.github.io/Portfolio/polyfills.fdf32f457489e665.js",
         "https://Pratik9492.github.io/Portfolio/runtime.322ebd040fcb9402.js",
@@ -236,8 +236,8 @@
     "https://Pratik9492.github.io/Portfolio/fa-solid-900.6bcd6c9c0a9fcfbf.woff2": "a9922842a120a7f1eaced667480c5e185a106d69",
     "https://Pratik9492.github.io/Portfolio/fa-solid-900.9d21645b52658faa.svg": "33fe5758f3992d8da2635c4fa230b54376dd18d1",
     "https://Pratik9492.github.io/Portfolio/favicon.ico": "4b4ba305d3c85a84c276b03d92a58cac31d71a7d",
-    "https://Pratik9492.github.io/Portfolio/index.html": "094c3f6e87bd94dd8ff8504ff59eb03bced54d1c",
-    "https://Pratik9492.github.io/Portfolio/main.75f30069d85db69c.js": "f9f0fad980af41723e2e1e78f679fb949470e7ba",
+    "https://Pratik9492.github.io/Portfolio/index.html": "f98203a1fc149114bcbaffb5489479e1e3fa7e9b",
+    "https://Pratik9492.github.io/Portfolio/main.88284351b7674686.js": "a40041443c0c5c3141a47f4ce5c2ee65415eb23a",
     "https://Pratik9492.github.io/Portfolio/manifest.webmanifest": "d24fedfd6f99377042ff5dba93290c2c591da926",
     "https://Pratik9492.github.io/Portfolio/owl.video.play.e3b436436832b027.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
     "https://Pratik9492.github.io/Portfolio/polyfills.fdf32f457489e665.js": "7da18d37ce16649ab9b0b8b4fb973adebdbb8f2c",
